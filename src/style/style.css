@@ -1,0 +1,128 @@
+
+ /*! style rule for SectionOne */
+
+.sectionOne__left--text{
+    font-size: var(--body);
+    font-family: var(--font-3);
+    color: var(--color-light-100);
+}
+.sectionOne__left--btn{
+    align-self: start;
+}
+
+
+/* !style rule ends for sectionOne */
+
+
+/* !style rule for sectionTwo */
+.sectionTwo{
+    display: grid;
+    gap: 30px;
+    padding: 40px 0;
+}
+.scetionTwo__content--text{
+    font-family: var(--font-2);
+    font-size:var(--sub);
+}
+.sectionTwo__logo{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+max-width: 100%;
+}
+.sectionTwo__logo>img{
+    justify-self: center;
+    align-self: center;
+
+}
+.sectionTwo__btn{
+    justify-self: center;
+    align-self: center;
+}
+
+
+/* !style rule ends for sectionTwo */
+
+.sectionThree,.sectionFour{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+}
+.sectionThree__right--btn{
+    justify-self: start;
+    align-self: start;
+}
+.sectionFour{
+    padding: 50px 0;
+}
+.sectionFive__center{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: space-between;
+    gap: 15px;
+    padding: 15px 0px;
+}
+.sectionFive__center>.center{
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px gray;
+    border: 1px solid black;
+    padding: 9px;
+}
+.sectionFive__center>.center>img{
+    border-radius: 50%;
+    border:1px solid black;
+}
+
+.sectionFive__right{
+    display: flex;
+    justify-content: center;
+}
+.sectionFive__left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0px
+}
+.sectionFive__left--label{
+    font-weight: bold;
+    color: var(--color-green-100);
+}
+.sectionFive__left--title{
+    font-size: var(--h1);
+    font-weight: bold;
+    font-family: var(--font-2);
+}
+.sectionFive__left--text{
+    font-family: var(--body);
+
+}
+
+
+
+
+
+@media (max-width:1117px) {
+    .sectionTwo__logo{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sectionFive__center{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:768px) {
+    .sectionFive__center,.sectionThree,.sectionFour{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sectionTwo__logo{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sectionOne__left,.sectionThree__left,.sectionFour_left{
+        order: 1;
+    }
+    .section_right,.sectionThree__right,.sectionFour__right{
+        order: 0;;
+    }
+    
+}

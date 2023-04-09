@@ -1,0 +1,15 @@
+.sectionOne__left{
+text-align: center;
+}
+
+.sectionOne__right--card_price{
+font-size: var(--h1);
+font-weight: bold;
+}
+
+.sectionOne__right--card{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
